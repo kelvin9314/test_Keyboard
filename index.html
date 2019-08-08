@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+  
+<head>
+  <meta charset="UTF-8">
+  <title>JK Keyboard</title>
+  <link rel="stylesheet" href="css/jkeyboard.css">
+  <style>
+      body{
+          background: #fff
+      }
+      #search_field{
+          display: block;
+          margin: 0 auto;
+          padding: 5px 10px;
+          font-size: 28px; 
+          width: 50%;
+      }
+          
+  </style>
+</head>
+
+<body>
+    <input type="text" id="search_field">
+    <div id="keyboard"></div>
+    
+    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/JKeyboard/keyboard.js"></script>
+
+</body>
+  
+<script>
+  $('#keyboard').jkeyboard({
+    input: $('#search_field'),
+    layout: 'english'
+});
+</script>
+  
+
+  
+
+</html>
